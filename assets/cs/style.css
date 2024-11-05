@@ -1,0 +1,308 @@
+@charset "UTF-8";
+/* ----------{  google font-family CDN  }---------- */
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Caveat:wght@400..700&family=Merienda:wght@300..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Salsa&display=swap');
+/* ----------{  Added font family by download  }---------- */
+@font-face {
+  font-family: salsa;
+  src: url(assets/font/salsa/Salsa-Regular.ttf);
+}
+
+/*!----------{  Author      :   Bisakto-Rahi  }----------_*/
+/*!----------{  Create      :   18/10/2024    }-----------_*/
+
+/*todo--------------{  Start Default Style For all  }--------------_*/
+
+/*_----------{  My Color Variables  }----------_*/
+:root {
+  --dark-red: #dc3545;
+  --red: #fc2a1b;
+  --pink: #e83e8c;
+  --purple: #6f42c1;
+  --indigo: #6610f2;
+  --blue: #007bff;
+  --dark-blue: #17a2b8;
+  --light-blue: #0dcaf0;
+  --light-green: #20c997;
+  --green: #28a745;
+  --yellow: #ffc107;
+  --orange: #fd7e14;
+  --highlight-x: #fff3cd;
+  --highlight-y: #ffff5b;
+  --black: #000;
+  --key: #131514;
+  --dark: #343a40;
+  --gray: #6c757d;
+  --white: #fff;
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-400: #ced4da;
+  --gray-500: #adb5bd;
+  --gray-600: #6c757d;
+  --gray-700: #495057;
+  --gray-800: #343a40;
+  --gray-900: #212529;
+  --light-border-color: #dee2e6;
+  --dark-border-color: #6c757d;
+  /*_----------{  My Font Variables  }----------_*/
+  --font-1: "Salsa", cursive;
+  --font-2: "Caveat", cursive;
+  --font-3: "Caveat Brush", cursive;
+  --font-4: "Merienda", cursive;
+  --font-5: "Merriweather", serif;
+}
+/*!----------{  Last Update   :   29/10/2024   }----------_*/
+
+/* ----------{  Added font family  }---------- */
+*{
+  font-family: var(--font-1);
+}        /* ----------{  Font weight : 0nly 400 are available  }---------- */
+.sub-heading{
+  font-family: var(--font-3);
+}        /* ----------{  Font weight : 0nly 400 are available  }---------- */
+p{
+  font-family: var(--font-2);
+  font-weight: 500;
+  text-align: justify;
+}       /* ----------{  Font weight : 400 - 700	are available  }---------- */
+.pera{
+  font-family: var(--font-4);
+  font-weight: 600;
+  text-align: center;
+}       /* ----------{  Font weight : 300 - 900	are available  }---------- */
+.pera-2{
+  font-family: var(--font-5);
+  font-weight: 500;
+  text-align: justify;
+}       /* ----------{  Font weight : 400 - 700	are available  }---------- */
+/*// --------{  Added font family  }----------// */
+/* ----------{  Body style  }---------- */
+*{
+  margin: 0;
+  padding: 0;
+}
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+:hover,
+:active,
+:focus{
+  outline: 0;
+  outline-offset: 0;
+}
+a,
+a:hover{
+  text-decoration: none;
+}
+body{
+  max-width: 100%;
+  font-size: 100%;
+  font-family: var(--my-font-1);
+  line-height: 1.5;
+  color: var(--gray-900);
+  background-color: var(--white);
+  overflow-x: hidden;
+}
+html{
+  scroll-behavior: smooth;
+}
+/*// -------{  Body style  }----------// */
+
+/* ----------{  scrollbar style  }---------- */
+::-webkit-scrollbar{
+  width: 0.625rem;
+}
+::-webkit-scrollbar-track{
+  background-color: #fff;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #6f00ff;
+}
+/*//----------{  scrollbar style  }---------- //*/
+/*//--------------{  Default Style For all  }--------------//*/
+/* 
+================================================================
+--------------------------{  Doctype.css }----------------------
+================================================================
+*/          /*_----------{  ^_^  }----------_*/
+
+
+/*todo--------------{  Start Header Section Style  }--------------_*/
+.N-head a{
+  text-decoration: none;
+}
+#nav-header{
+  color: var(--key);
+  font-size: 38px;
+  letter-spacing: 1.5px;
+}
+#nav-header i{
+  color:var(--red);
+}
+#nav-header i:hover{
+  color:var(--key);
+}
+#icon1{
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  margin-left: 43%;
+}
+#icon2{
+  font-size: 30px;
+}
+.nav-icon #icon1:hover,
+#icon2:hover{
+  color: var(--red)!important;
+}
+/*//--------------{  Header Section Style  }--------------//*/
+/*todo--------------{  Start Navbar Section Style  }--------------_*/
+.my-nav{
+  margin-left: 8%;
+}
+.nav li a{
+  font-size: 20px;
+}
+.nav li a:hover{
+  color: var(--red)!important;
+  font-weight: bolder;
+}
+/*//--------------{  Navbar Section Style  }--------------//*/
+/*todo-------------{  Start Banner Section Style  }---------------_*/
+.banner-bg{
+  background-color: var(--black);
+}
+.banner img{
+  height: 100vh;
+  width: 100%;
+}
+/*//--------------{  Banner Section Style  }----------------//*/
+/*todo--------------{  Start Extra Section Style  }---------------_*/
+/* photo section style  */
+.my-card img{
+  height:320px;
+  width: 100%;
+}
+.my-card .card{
+  border-radius: 8px;
+}
+.my-card .card-1st{
+  margin-bottom: 25px;
+}
+.my-card .card-mid img{
+  height: 667px;
+  width: 100%;
+}
+/* feedback section style  */
+#pera{
+  font-size: 14px;
+}
+/* Add section style  */
+#my-btn-1{
+  border-radius: 20px;
+  width: 100%;
+}
+.btn-div{
+  width: 20%;
+  margin: auto;
+}
+/* Latest Blog section  */
+.icon-footer{
+  text-align: right;
+  padding: 0;
+  margin: 0;
+}
+.blog-card img{
+  height: 370px;
+  width: 100%;
+}
+/*//--------------{  Extra Section Style  }-------------//-_*/
+/*todo--------------{  Start Article Section Style  }---------------_*/
+/*//--------------{  Article Section Style  }-------------//-_*/
+/*todo--------------{  Start Aside Section Style  }---------------_*/
+/*//--------------{  Aside Section Style  }---------------//*/
+/*todo--------------{  Start Footer Section Style  }---------------_*/
+.my-footer{
+  background-color: var(--black);
+  color: var(--gray-100);
+}
+.footer-address{
+  line-height: 30px;
+}
+.footer-h2{
+  color: var(--orange)!important;
+  padding-top: 10px;
+  font-size: 40px;
+  text-decoration: underline;
+}
+.footer-h2:hover{
+  color: var(--red)!important;
+}
+.footer-email{
+  color: var(--white)!important;
+  font-size: 20px;
+  text-decoration: none;
+  font-style: italic;
+}
+.footer-email:hover{
+  color: var(--red)!important;
+}
+.my-foot-link{
+  margin-left: 30px;
+}
+.footer-link a{
+  color: var(--white)!important;
+  line-height: 30px;
+}
+.footer-heading{
+  color: var(--white)!important;
+  font-size: 25px;
+}
+.footer-link h6{
+  color: var(--white)!important;
+  font-size: 25px;
+}
+.footer-link a:hover{
+  color: var(--orange)!important;
+}
+.footer-link .search{
+  margin-top: 20px;
+  width: 65%;
+  margin-right:10px ;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  outline: none;
+  padding-left: 10px;
+  padding: 4px 1px 4px 10px;
+  background-color: var(--black);
+  border: 2px solid var(--gray-600);
+  color: var(--gray-300);
+}
+.search::placeholder{
+  color: var(--gray-300);
+
+}
+.search:focus{
+  background-color: var(--white);
+  border: 2px solid var(--gray-800);
+  color: var(--black);
+}
+.search:hover{
+  background-color: var(--gray-800);
+}
+.my-search{
+  color: var(--gray-300);
+  font-size: 20px;
+}
+.my-search:hover{
+  color: var(--red);
+}
+/*//--------------{  Footer Section Style  }--------------//_*/
+
+/*//--------------{  Footer Section Style  }--------------//_*/
+/*?----------{  Add Description  }----------?*/
+
+
+/*//----------{  Description  }----------//*/
