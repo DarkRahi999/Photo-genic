@@ -115,10 +115,10 @@ html{
   width: 0.625rem;
 }
 ::-webkit-scrollbar-track{
-  background-color: #fff;
+  background-color: var(--white);
 }
 ::-webkit-scrollbar-thumb{
-  background-color: #6f00ff;
+  background-color: var(--black);
 }
 /*//----------{  scrollbar style  }---------- //*/
 /*//--------------{  Default Style For all  }--------------//*/
@@ -173,6 +173,17 @@ html{
 /*todo-------------{  Start Banner Section Style  }---------------_*/
 .banner-bg{
   background-color: var(--black);
+}
+.big-heading{
+  position: relative;
+}
+.heading{
+  position: absolute;
+  top: 250px;
+}
+#my-btn-2{
+  border-radius: 16px;
+  font-size: 24px;
 }
 .banner img{
   height: 100vh;
@@ -300,8 +311,22 @@ html{
   color: var(--red);
 }
 /*//--------------{  Footer Section Style  }--------------//_*/
-
-/*//--------------{  Footer Section Style  }--------------//_*/
+/*todo--------------{  Start About Page Style  }---------------_*/
+.about-banner img{
+  height: 400px;
+  width: 100%;
+}
+.img-div img{
+  position: relative;
+}
+.heading-div{
+  position: absolute;
+  top: 200px;
+  left: 70px;
+}
+.heading-div h2{
+  color: var(--white);
+}
 /*?----------{  Add Description  }----------?*/
 
 
