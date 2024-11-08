@@ -71,6 +71,11 @@ p{
   text-align: center;
 }       /* ----------{  Font weight : 300 - 900	are available  }---------- */
 .pera-2{
+  font-family: var(--font-4);
+  font-weight: 600;
+  text-align: justify;
+}       /* ----------{  Font weight : 300 - 900	are available  }---------- */
+.pera-3{
   font-family: var(--font-5);
   font-weight: 500;
   text-align: justify;
@@ -206,7 +211,54 @@ html{
   height: 667px;
   width: 100%;
 }
-/* feedback section style  */
+/* photo transition section style  */
+.big-img{
+  position: relative;
+  overflow: hidden;
+}
+#hidden-text{
+  bottom:100px;
+}
+.big-img:hover #hidden-text{
+  bottom:100px;
+  left: 40px;
+  right: 40px;
+}
+.hidden-text{
+  position: absolute;
+  z-index: -1;
+  transition: 0.5s;
+  bottom:40px;
+  left: 10px;
+  right: 10px;
+}
+.big-img:hover .hidden-text{
+  color: #fff;
+  z-index: 1;
+  bottom: 40px;
+  left: 40px;
+  right: 40px;
+}
+.big-img:hover #hidden-text-2 {
+  left: 36px;
+  right: 36px;
+}
+/* photo Animation section style  */
+.big-img img:hover{
+  animation-name: scale;
+  animation-duration: 1s;
+  animation-direction: inherit;
+  animation-fill-mode: forwards;
+}
+@keyframes scale {
+  0%{
+    transform: scale(1.0);
+  }
+  100%{
+    transform: scale(1.2);
+  }
+}
+/*? feedback section style  */
 #pera{
   font-size: 14px;
 }
@@ -293,7 +345,6 @@ html{
 }
 .search::placeholder{
   color: var(--gray-300);
-
 }
 .search:focus{
   background-color: var(--white);
@@ -312,6 +363,7 @@ html{
 }
 /*//--------------{  Footer Section Style  }--------------//_*/
 /*todo--------------{  Start About Page Style  }---------------_*/
+/* banner section style  */
 .about-banner img{
   height: 400px;
   width: 100%;
@@ -326,6 +378,20 @@ html{
 }
 .heading-div h2{
   color: var(--white);
+}
+/* article section style  */
+#my-btn-3{
+  border-radius: 18px;
+  font-size: 20px;
+}
+/* details section style  */
+.icon-1{
+  font-size: 20px;
+}
+/* demo section style  */
+.demo img {
+  height: 28opx;
+  width: 100%;
 }
 /*?----------{  Add Description  }----------?*/
 
