@@ -75,6 +75,13 @@ p{
   font-weight: 600;
   text-align: justify;
 }       /* ----------{  Font weight : 300 - 900	are available  }---------- */
+.pera-25{
+  color: var(--gray-600);
+  font-family: var(--font-4);
+  font-size: 15px;
+  font-weight: 600;
+  text-align: justify;
+}       /* ----------{  Font weight : 300 - 900	are available  }---------- */
 .pera-3{
   font-family: var(--font-5);
   font-weight: 500;
@@ -278,7 +285,7 @@ html{
   margin: 0;
 }
 .blog-card img{
-  height: 370px;
+  height: 400px;
   width: 100%;
 }
 /*//--------------{  Extra Section Style  }-------------//-_*/
@@ -388,10 +395,30 @@ html{
 .icon-1{
   font-size: 20px;
 }
-/* demo section style  */
+/* Photo-gaper section style  */
+.bg-gaper{
+  background-color: #fae2e2;
+}
+/* Photo-gaper section  */
 .demo img {
   height: 28opx;
   width: 100%;
+}
+.bg-img{
+  position: relative;
+  overflow: hidden;
+}
+.hidden-icon{
+  position: absolute;
+  z-index: -1;
+  bottom: 20%;
+  left: 18%;
+  transition: 0.4s;
+}
+.bg-img:hover .hidden-icon{
+  z-index: 2;
+  bottom: 20%;
+  left: 18%;
 }
 /*?----------{  Add Description  }----------?*/
 
